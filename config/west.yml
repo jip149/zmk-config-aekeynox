@@ -61,7 +61,7 @@ manifest:
       # A fork of `GEIGEIGEIST`'s ZMK Totem module, to migrate it to ZMK main
     - name: zmk-config-totem
       remote: jip149
-      revision: 2f8a2a3b34cad08838fbc4c35bdbd5f5073ef742
+      revision: d8e197aca8df7a4fb9f4c169129f9d859c47949c
 
       # Temper/Chocofi: split ProMicro-compatible shield
       # A fork of `raeedcho`'s ZMK Temper module including long-standing patch proposals.
