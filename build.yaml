@@ -49,13 +49,13 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: &cmake-args -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_POINTING=y
 
-    # Totem + XIAO BLE
-  - board: xiao_ble//zmk
+    # Totem + XIAO RP2040
+  - board: xiao_rp2040//zmk
     shield: totem_left
     artifact-name: totem_left
     snippet: studio-rpc-usb-uart
     cmake-args: *cmake-args
-  - board: xiao_ble//zmk
+  - board: xiao_right//zmk
     shield: totem_right
     artifact-name: totem_right
 
