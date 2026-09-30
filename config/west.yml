@@ -12,8 +12,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: cfergeau
-      url-base: https://github.com/cfergeau
+    - name: jip149
+      url-base: https://github.com/jip149
     - name: NuclearSquid
       url-base: https://github.com/Nuclear-Squid
     - name: rloutier
@@ -60,8 +60,8 @@ manifest:
       # Totem: split XIAO-compatible shield
       # A fork of `GEIGEIGEIST`'s ZMK Totem module, to migrate it to ZMK main
     - name: zmk-config-totem
-      remote: cfergeau
-      revision: 9677c2fd5af7cee784aafb1b52a25a33357336c2
+      remote: jip149
+      revision: 83de50973193c3c392c2eb45bac207df7c5e3c1c
 
       # Temper/Chocofi: split ProMicro-compatible shield
       # A fork of `raeedcho`'s ZMK Temper module including long-standing patch proposals.
