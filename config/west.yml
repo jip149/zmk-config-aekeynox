@@ -61,25 +61,7 @@ manifest:
       # A fork of `GEIGEIGEIST`'s ZMK Totem module, to migrate it to ZMK main
     - name: zmk-wired-totem
       remote: jip149
-      revision: main
-
-      # Temper/Chocofi: split ProMicro-compatible shield
-      # A fork of `raeedcho`'s ZMK Temper module including long-standing patch proposals.
-      # https://github.com/OneDeadKey/zmk-config-aekeynox/pull/101
-    - name: temper-zmk-config
-      remote: NuclearSquid
-      revision: aekeynox
-
-      # Go60: split nrf52840-based board
-      # A fork of MoErgo's ZMK go60 module, to migrate it to ZMK main
-    - name: zmk-config-go60
-      remote: rloutier
-      revision: 1bb1f847162f5ccec162c5ba6516d0c73b6a8c39
-
-      # Re-gret: unibody XIAO-compatible shield, 34 keys
-    - name: zmk-keyboard-re-gret
-      remote: rschenk
-      revision: 34ca1fc7dc6991475b0c20f2c8361598e7aaeaca
+      revision: d68f7f71827fefbb2fea14df3b49b92d2fb79ebf
 
   self:
     path: config
