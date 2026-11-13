@@ -47,7 +47,9 @@ include:
     shield: totem_left
     artifact-name: totem_left
     cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-module"
+    snippet: zmk-usb-logging
   - board: xiao_rp2040//zmk
     shield: totem_right
     artifact-name: totem_right
     cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-module"
+    snippet: zmk-usb-logging
