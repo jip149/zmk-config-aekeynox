@@ -24,7 +24,7 @@
 
 #define K_LOUT1 &kp LTOP
 #define K_LOUT2 &kp LHOME
-#define K_LOUT3 &kp LSHIFT
+#define K_LOUT3 &leader1
 #define K_ROUT1 &kp RTOP
 #define K_ROUT2 &kp RHOME
-#define K_ROUT3 &kp RSHIFT
+#define K_ROUT3 &leader2

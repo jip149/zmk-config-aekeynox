@@ -1,0 +1,54 @@
+/ {
+    macros {
+        melpro: melpro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <C_J C_E C_A C_N S_MINUS C_P C_H C_I C_L C_I C_P C_P C_E S_DOT C_G C_A C_R C_C C_I S_MINUS C_E C_X C_T S_AT C_V C_A C_N C_C C_L C_E C_E C_F C_A C_R C_P C_E C_L C_S S_DOT C_C C_O C_M>;
+        };
+        dps: dps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <S_AT C_D C_P C_S C_S C_E C_P C_T C_M C_O C_N C_C C_E C_L S_DOT C_C C_O C_M>;
+        };
+        usr: usr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <C_J C_E C_A C_N S_MINUS C_P C_H C_I C_L C_I C_P C_P C_E S_DOT C_G C_A C_R C_C C_I>;
+        };
+        lusr: lusr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <C_L S_MINUS C_J C_E C_A C_N S_MINUS C_P C_H C_I C_L C_I C_P C_P C_E S_DOT C_G C_A C_R C_C>;
+        };
+        ausr: ausr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <C_A S_MINUS C_J C_E C_A C_N S_MINUS C_P C_H C_I C_L C_I C_P C_P C_E S_DOT C_G C_A C_R C_C>;
+        };
+        melperso: melperso {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <C_J C_I C_P S_AT C_R C_E C_Z C_A C_L S_DOT C_C C_C>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        leader1: leader1 {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            mel { sequence = <K_M K_E K_L>; bindings = <&melpro>; };
+            usr { sequence = <K_U K_S K_R>; bindings = <&usr>; };
+            lusr { sequence = <K_L K_U K_S K_R>; bindings = <&lusr>; };
+            ausr { sequence = <K_Q K_U K_S K_R>; bindings = <&ausr>; };
+            dps { sequence = <K_D K_P K_S>; bindings = <&dps>; };
+        };
+
+        leader2: leader2 {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            mel { sequence = <K_M K_E K_L>; bindings = <&melperso>; };
+        };
+    };
+};
