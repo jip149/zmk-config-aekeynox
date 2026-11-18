@@ -83,9 +83,9 @@
     vim_nav_layer: vim_nav_layer {
       display-name = "VimNav";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-        &trans  ,  &none    X_CTL_W  &vim_prev &vim_next &none     ,   &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL ,  &trans ,
-        &trans  ,  X_ALL    X_SAVE   X_SHTAB   &kp TAB   &none     ,   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none   ,  &trans ,
-        &trans  ,  X_UNDO   X_CUT    X_COPY    X_PASTE   X_REDO    ,   X_MSC_L  X_MSC_D   X_MSC_U   X_MSC_R   &none   ,  &trans ,
+        &trans  ,  &none    X_CTL_W  &vim_prev &vim_next &none     ,   &kp HOME  &kp PG_DN     &kp PG_UP &kp END   &kp DEL ,  &trans ,
+        &trans  ,  X_ALL    X_SAVE   X_SHTAB   &kp TAB   &none     ,   &kp LEFT  &kp DOWN      &kp UP    &kp RIGHT &none   ,  &trans ,
+        &trans  ,  X_UNDO   X_CUT    X_COPY    X_PASTE   X_REDO    ,   &none     &kp C_AL_LOCK &kp SCLK  &kp PSCRN &kp INS ,  &trans ,
     VIM_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , &mo NUM_ROW_LAYER   ,   &mo NUM_ROW_LAYER ,  &mo FN_MEDIA_LAYER , NAV_RTHUMB_TUCK
       )>;
     };
@@ -161,10 +161,10 @@
     fn_media_layer: fn_media_layer {
       display-name = "FnMedia";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-        &trans  ,  &kp F1  &kp F2  &kp F3  &kp F4  &none   ,   &bt BT_SEL 2  &kp C_NEXT  &kp C_VOL_UP  &kp C_BRI_UP   &kp SLCK    ,  &trans ,
-        &trans  ,  &kp F5  &kp F6  &kp F7  &kp F8  &none   ,   &bt_sel1_clr  &UH1 C_PP   &UH2 C_MUTE   &UH3 C_AL_LOCK &UH4 PSCRN  ,  &trans ,
-        &trans  ,  &kp F9  &kp F10 &kp F11 &kp F12 &none   ,   &bt BT_SEL 0  &kp C_PREV  &kp C_VOL_DN  &kp C_BRI_DN   &kp INS     ,  &trans ,
-                           &trans , &bootloader , &trans   ,   &trans , &sys_reset , &studio_unlock
+        &trans  ,  &kp F1  &kp F2  &kp F3  &kp F4  &none   ,   &kp C_PP       &kp C_BRI_DN   &kp C_BRI_UP &kp C_BRI_AUTO  &none       ,  &trans ,
+        &trans  ,  &kp F6  &kp F6  &kp F7  &kp F8  &none   ,   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp C_MUTE  ,  &trans ,
+        &trans  ,  &kp F9  &kp F10 &kp F11 &kp F12 &none   ,   &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP &kp C_NEXT      &kp F20     ,  &trans ,
+                                &trans , &trans , &trans   ,   &mkp MB1 , &mkp MB3 , &mkp MB2
       )>;
     };
 
