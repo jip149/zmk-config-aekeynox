@@ -21,6 +21,64 @@
 #endif
 
 /**
+ * Characters
+ */
+
+#define K_A Q
+#define K_B B
+#define K_C C
+#define K_D D
+#define K_E E
+#define K_F F
+#define K_G G
+#define K_H H
+#define K_I I
+#define K_J J
+#define K_K K
+#define K_L L
+#define K_M SEMICOLON
+#define K_N N
+#define K_O O
+#define K_P P
+#define K_Q A
+#define K_R R
+#define K_S S
+#define K_T T
+#define K_U U
+#define K_V V
+#define K_W Z
+#define K_X X
+#define K_Y Y
+#define K_Z W
+
+#define C_A &kp K_A
+#define C_B &kp K_B
+#define C_C &kp K_C
+#define C_D &kp K_D
+#define C_E &kp K_E
+#define C_F &kp K_F
+#define C_G &kp K_G
+#define C_H &kp K_H
+#define C_I &kp K_I
+#define C_J &kp K_J
+#define C_K &kp K_K
+#define C_L &kp K_L
+#define C_M &kp K_M
+#define C_N &kp K_N
+#define C_O &kp K_O
+#define C_P &kp K_P
+#define C_Q &kp K_Q
+#define C_R &kp K_R
+#define C_S &kp K_S
+#define C_T &kp K_T
+#define C_U &kp K_U
+#define C_V &kp K_V
+#define C_W &kp K_W
+#define C_X &kp K_X
+#define C_Y &kp K_Y
+#define C_Z &kp K_Z
+
+/**
  * Action Combos
  */
 
