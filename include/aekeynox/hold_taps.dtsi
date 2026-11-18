@@ -182,6 +182,7 @@
 
 #define EZ_SL(layer)  bsl (layer) (layer)
 #define EZ_SK(mod)    bsk (mod) (mod)
+#define EZ_SKL(mod)   bskl (mod) (mod)
 #define EZ_LSK(mod)   lbsk (mod) (mod)
 &sl { ignore-modifiers; }; // keep one-shot-mods when chained into a one-shot-layer
 &sk { quick-release; };    // must-have! (lots of false positives otherwise)
@@ -247,6 +248,30 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&osm>;
       hold-while-undecided;
+    };
+    // Lazy version
+    OMIT_IF_NO_REF skl: sticky_key_lazy {
+      compatible = "zmk,behavior-sticky-key";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      release-after-ms = <1000>;
+      quick-release;
+      lazy;
+      ignore-modifiers;
+    };
+    OMIT_IF_NO_REF osml: one_shot_modifier_lazy {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      tap-ms = <0>;
+      wait-ms = <0>;
+      bindings = <&macro_param_1to1>, <&macro_tap &skl MACRO_PLACEHOLDER>;
+    };
+    OMIT_IF_NO_REF bskl: better_sticky_key_lazy {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&osml>;
     };
 
     // mod‐morph to have Capslock on double‐tap Shift
