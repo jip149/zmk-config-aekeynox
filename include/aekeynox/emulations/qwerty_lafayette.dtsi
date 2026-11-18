@@ -26,10 +26,10 @@
   &base_layer {
     display-name = "Base";
     bindings = <SELENIUM_KEYMAP_BINDINGS(
-      &kp LTOP   ,  &kp K_Q  &kp K_W  &kp K_E  &kp K_R  &kp K_T   ,   &kp K_Y  &kp K_U  &kp K_I  &kp K_O  &kp K_P ,  &kp RTOP   ,
-      &kp LHOME  ,  &H4 K_A  &H3 K_S  &H2 K_D  &H1 K_F  &kp K_G   ,   &kp K_H  &H1 K_J  &H2 K_K  &H3 K_L  &apos   ,  &kp RHOME  ,
-      &kp LSHIFT ,  &kp K_Z  &kp K_X  &kp K_C  &kp K_V  &kp K_B   ,   &kp K_N  &kp K_M  &comma   &dot     &slash  ,  &kp RSHIFT ,
-                       LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
+      K_LOUT1 ,  &kp K_Q  &kp K_W  &kp K_E  &kp K_R  &kp K_T   ,   &kp K_Y  &kp K_U  &kp K_I  &kp K_O  &kp K_P ,  K_ROUT1 ,
+      K_LOUT2 ,  &H4 K_A  &H3 K_S  &H2 K_D  &H1 K_F  &kp K_G   ,   &kp K_H  &H1 K_J  &H2 K_K  &H3 K_L  &apos   ,  K_ROUT2 ,
+      K_LOUT3 ,  &kp K_Z  &kp K_X  &kp K_C  &kp K_V  &kp K_B   ,   &kp K_N  &kp K_M  &comma   &dot     &slash  ,  K_ROUT3 ,
+                    LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
     )>;
   };
   #define K_DIA &kp LBRC // diaeresis
@@ -39,10 +39,10 @@
   &base_layer {
     display-name = "Base";
     bindings = <SELENIUM_KEYMAP_BINDINGS(
-      &kp LTOP   ,  &kp Q  &kp W  &kp E  &kp R  &kp T   ,   &kp Y  &kp U  &kp I  &kp O  &kp P     ,  &kp RTOP   ,
-      &kp LHOME  ,  &H4 A  &H3 S  &H2 D  &H1 F  &kp G   ,   &kp H  &H1 J  &H2 K  &H3 L  &apos     ,  &kp RHOME  ,
-      &kp LSHIFT ,  &kp Z  &kp X  &kp C  &kp V  &kp B   ,   &kp N  &kp M  &comma &dot   &kp FSLH  ,  &kp RSHIFT ,
-             LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
+      K_LOUT1 ,  &kp Q  &kp W  &kp E  &kp R  &kp T   ,   &kp Y  &kp U  &kp I  &kp O  &kp P     ,  K_ROUT1 ,
+      K_LOUT2 ,  &H4 A  &H3 S  &H2 D  &H1 F  &kp G   ,   &kp H  &H1 J  &H2 K  &H3 L  &apos     ,  K_ROUT2 ,
+      K_LOUT3 ,  &kp Z  &kp X  &kp C  &kp V  &kp B   ,   &kp N  &kp M  &comma &dot   &kp FSLH  ,  K_ROUT3 ,
+          LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
     )>;
   };
   #define K_DIA &kp DQT // diaeresis

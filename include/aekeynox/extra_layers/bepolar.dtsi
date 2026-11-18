@@ -6,10 +6,10 @@
 // Override the default base layer to apply Bepolar over a Bepo host ([N] becomes 1DK).
 &base_layer {
   bindings = <SELENIUM_KEYMAP_BINDINGS(
-    &kp LTOP   , &kp Q  &kp SQT &kp E  &kp R  &kp RBKT  ,   &kp LBKT &kp U  &kp I     &kp O   &kp P     ,  &kp RTOP   ,
-    &kp LHOME  , &H4 A  &H3 S   &H2 D  &H1 F  &kp G     ,   &kp H    &H1 J  &H2 K     &H3 L   &H4 SEMI  ,  &kp RHOME  ,
-    &kp LSHIFT , &dash  &kp X   &kp C  &kp V  &kp B     ,   &odk     &kp M  &kp COMMA &kp DOT &kp FSLH  ,  &kp RSHIFT ,
-              LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH  ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
+    K_LOUT1 , &kp Q  &kp SQT &kp E  &kp R  &kp RBKT  ,   &kp LBKT &kp U  &kp I     &kp O   &kp P     ,  K_ROUT1 ,
+    K_LOUT2 , &H4 A  &H3 S   &H2 D  &H1 F  &kp G     ,   &kp H    &H1 J  &H2 K     &H3 L   &H4 SEMI  ,  K_ROUT2 ,
+    K_LOUT3 , &dash  &kp X   &kp C  &kp V  &kp B     ,   &odk     &kp M  &kp COMMA &kp DOT &kp FSLH  ,  K_ROUT3 ,
+           LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH  ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
   )>;
 };
 
