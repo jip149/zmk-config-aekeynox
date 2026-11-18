@@ -20,6 +20,8 @@ manifest:
       url-base: https://github.com/rloutier
     - name: rschenk
       url-base: https://github.com/rschenk
+    - name: urob
+      url-base: https://github.com/urob
 
   projects:
       # We rely on a fork of ZMK for a couple of reasons:
@@ -46,6 +48,10 @@ manifest:
     - name: zmk-behavior-mod-hold
       remote: NuclearSquid
       revision: aekeynox
+
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
 
       ###
       # Community keyboards (not officially supported by ZMK)
