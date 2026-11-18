@@ -26,10 +26,10 @@
   &base_layer {
     display-name = "Base";
     bindings = <SELENIUM_KEYMAP_BINDINGS(
-      &kp LTOP   ,  &kp A  &kp C  &kp O  &kp P  &kp Z   ,   &kp J  &kp SEMI &kp D  &apos  &kp Y  ,  &kp RTOP   ,
-      &kp LHOME  ,  &H4 Q  &H3 S  &H2 E  &H1 N  &kp F   ,   &kp L  &H1 R    &H2 T  &H3 I  &H4 U  ,  &kp RHOME  ,
-      &kp LSHIFT ,  &kp W  &kp X  &dash  &kp V  &kp B   ,   &dot   &kp H    &kp G  &comma &kp K  ,  &kp RSHIFT ,
-             LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
+      &kp LTOP   ,  &kp K_Q  &kp K_C  &kp K_O  &kp K_P  &kp K_W   ,   &kp K_J  &kp K_M  &kp K_D  &apos    &kp K_Y  ,  &kp RTOP   ,
+      &kp LHOME  ,  &H4 K_A  &H3 K_S  &H2 K_E  &H1 K_N  &kp K_F   ,   &kp K_L  &H1 K_R  &H2 K_T  &H3 K_I  &H4 K_U  ,  &kp RHOME  ,
+      &kp LSHIFT ,  &kp K_Z  &kp K_X  &dash    &kp K_V  &kp K_B   ,   &dot     &kp K_H  &kp K_G  &comma   &kp K_K  ,  &kp RSHIFT ,
+                       LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH   ,   RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
     )>;
   };
   #define K_DIA &kp LBRC // diaeresis
