@@ -43,13 +43,15 @@ include:
   ##
 
      # Totem + XIAO RP2040
+     # WARNING This build only works with a custom-welded TRRS cable, with base and tip crossed
+     # Central is right half, and peripheral is left one by default
   - board: xiao_rp2040//zmk
-    shield: totem_left
-    artifact-name: totem_left
-    cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-module"
+    shield: totem-wired_left
+    artifact-name: totem-wired_left
+    cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-wired-module"
     snippet: zmk-usb-logging
   - board: xiao_rp2040//zmk
-    shield: totem_right
-    artifact-name: totem_right
-    cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-module"
+    shield: totem-wired_right
+    artifact-name: totem-wired_right
+    cmake-args: &cmake-args -DZMK_EXTRA_MODULES="/__w/zmk-config-aekeynox/zmk-config-aekeynox;/tmp/zmk-config/zmk-wired-totem/totem-wired-module"
     snippet: zmk-usb-logging
