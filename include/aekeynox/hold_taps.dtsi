@@ -12,13 +12,14 @@
 #define VIM_NAV_LAYER       3
 #define NAV_NUM_LAYER       4
 #define CALLUM_LAYER        5
-#define NUM_ROW_LEFT_LAYER  6
-#define NUM_ROW_RIGHT_LAYER 7
-#define FN_MEDIA_LAYER      8
+#define NUM_ROW             6
+#define NUM_ROW_LEFT_LAYER  7
+#define NUM_ROW_RIGHT_LAYER 8
+#define FN_MEDIA_LAYER      9
 
 // Potentially used by other keymaps deriving from this one, who may add extra layers.
 // Make sure this stays equal to <index_of_last_layer> + 1
-#define EXTRA_LAYERS_START_INDEX 9
+#define EXTRA_LAYERS_START_INDEX 10
 
 
 /**
