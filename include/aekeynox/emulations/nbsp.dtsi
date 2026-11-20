@@ -1,6 +1,6 @@
 / {
   behaviors {
-    TWO_LEVEL_KEY(nbspace, &kp SPACE, C_NBSP)  // space, no‐break space 
+    TWO_LEVEL_KEY(nbspace, &kp SPACE, C_NBSP)  // space, no‐break space
 
     OMIT_IF_NO_REF hrmsp: homerow_mods_space {
       compatible = "zmk,behavior-hold-tap";
@@ -20,13 +20,21 @@
       bindings = <&mo>, <&nbspace>;
     };
 
-    OMIT_IF_NO_REF ltsp: layer_tap_space { 
+    OMIT_IF_NO_REF ltsp: layer_tap_space {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <TAPPING_TERM>;
       quick-tap-ms = <QUICK_TAP>;
       flavor = "tap-preferred";
       bindings = <&mo>, <&nbspace>;
+    };
+    OMIT_IF_NO_REF ltnbsp: layer_tap_nbspace {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <1>;
+      tapping-term-ms = <TAPPING_TERM>;
+      quick-tap-ms = <QUICK_TAP>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <C_NBSP>;
     };
 
     OMIT_IF_NO_REF magic_backspace_emul: magic_backspace_emulation {
@@ -56,12 +64,12 @@
 };
 
 #ifdef LHAND_SPACE
-  #undef LTHUMB_TT  
-  #undef RTHUMB_TT  
-  #undef LTHUMB_HRM 
-  #undef RTHUMB_HRM 
-  #undef LTHUMB_S34 
-  #undef RTHUMB_S34 
+  #undef LTHUMB_TT
+  #undef RTHUMB_TT
+  #undef LTHUMB_HRM
+  #undef RTHUMB_HRM
+  #undef LTHUMB_S34
+  #undef RTHUMB_S34
   #define LTHUMB_TT  &hrmsp CTL_CMD 0
   #define RTHUMB_TT  &magic_backspace_emul
   #define LTHUMB_HRM &ltsp NAV_LAYER 0
