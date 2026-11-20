@@ -12,7 +12,7 @@
 #define VIM_NAV_LAYER       3
 #define NAV_NUM_LAYER       4
 #define CALLUM_LAYER        5
-#define NUM_ROW             6
+#define NUM_ROW_LAYER       6
 #define NUM_ROW_LEFT_LAYER  7
 #define NUM_ROW_RIGHT_LAYER 8
 #define FN_MEDIA_LAYER      9
