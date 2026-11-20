@@ -1,5 +1,5 @@
 // hybrid Ergol/Lafayette NumRow
-&num_row_layer_left {
+&num_row_left_layer {
   display-name = "NumRowLeft";
   bindings = <SELENIUM_KEYMAP_BINDINGS(
     &trans  ,  C_LGQT        C_RGQT        C_LODQT       C_LDQT        C_RDQT  ,  &trans  &trans  &trans  &trans  &trans  ,  &trans ,
@@ -9,7 +9,7 @@
   )>;
 };
 
-&num_row_layer_right {
+&num_row_right_layer {
   display-name = "NumRowRight";
   bindings = <SELENIUM_KEYMAP_BINDINGS(
     &trans  ,  &trans  &trans  &trans  &trans  &trans  ,  S_MINUS S_COMMA       S_DOT         S_COLON       S_FSLH         ,  &trans ,
