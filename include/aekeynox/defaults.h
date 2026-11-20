@@ -42,8 +42,10 @@
   #undef HT_THUMB_TAPS
   #undef HT_HOME_ROW_MODS
   #define HT_TWO_THUMB_KEYS
-#elif !defined HT_NONE && !defined HT_THUMB_TAPS && !defined HT_HOME_ROW_MODS && !defined HT_TWO_THUMB_KEYS && !defined HT_ARSENIK
+#elif !defined HT_NONE && !defined HT_THUMB_TAPS && !defined HT_HOME_ROW_MODS && !defined HT_TWO_THUMB_KEYS && !defined HT_ARSENIK && !defined CALLUM_NAVIGATION
   #define HT_HOME_ROW_MODS
+#elif !defined HT_NONE && !defined HT_THUMB_TAPS && !defined HT_HOME_ROW_MODS && !defined HT_TWO_THUMB_KEYS && !defined HT_ARSENIK
+  #define HT_CALLUM_MODS
 #elif defined HT_NONE + defined HT_THUMB_TAPS + defined HT_HOME_ROW_MODS + defined HT_TWO_THUMB_KEYS + defined HT_ARSENIK > 1
   #error "Please select only up to one hold-tap configuration at a time"
 #endif
