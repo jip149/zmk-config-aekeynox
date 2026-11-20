@@ -30,7 +30,7 @@
     };
     OMIT_IF_NO_REF ltnbsp: layer_tap_nbspace {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <1>;
+      #binding-cells = <2>;
       tapping-term-ms = <TAPPING_TERM>;
       quick-tap-ms = <QUICK_TAP>;
       flavor = "tap-preferred";

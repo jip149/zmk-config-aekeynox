@@ -15,7 +15,7 @@
     &trans  ,  C_LGQT        C_RGQT        C_LODQT       C_LDQT        C_RDQT  ,  &trans  &trans  &trans  &trans  &trans  ,  &trans ,
     &trans  ,  &EZ_SKL(LSFT) &EZ_SKL(LGUI) &EZ_SKL(LCTL) &EZ_SKL(LALT) &trans  ,  &trans  &trans  &trans  &trans  &trans  ,  &trans ,
     &trans  ,  S_N1          S_N2          S_N3          S_N4          S_N5    ,  &trans  &trans  &trans  &trans  &trans  ,  &trans ,
-                                                     &trans , &trans, &trans   ,   &trans , &ltnbsp NAV_LAYER , &trans
+                                                     &trans , &trans, &trans   ,   &trans , &ltnbsp NAV_LAYER 0 , &trans
   )>;
 };
 
