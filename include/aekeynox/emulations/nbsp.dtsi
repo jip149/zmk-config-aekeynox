@@ -41,7 +41,7 @@
       tapping-term-ms = <TAPPING_TERM>;
       quick-tap-ms = <QUICK_TAP>;
       flavor = "tap-preferred";
-      bindings = <&mo>, <$nbsp>;
+      bindings = <&mo>, <&nbsp>;
     };
 
     OMIT_IF_NO_REF magic_backspace_emul: magic_backspace_emulation {
