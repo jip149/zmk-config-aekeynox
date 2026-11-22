@@ -2,6 +2,12 @@
   behaviors {
     TWO_LEVEL_KEY(nbspace, &kp SPACE, C_NBSP)  // space, no‐break space
 
+    OMIT_IF_NO_REF nbsp: non_breaking_space {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <C_NBSP>;
+    };
+
     OMIT_IF_NO_REF hrmsp: homerow_mods_space {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -27,6 +33,15 @@
       quick-tap-ms = <QUICK_TAP>;
       flavor = "tap-preferred";
       bindings = <&mo>, <&nbspace>;
+    };
+
+    OMIT_IF_NO_REF ltnbsp: layer_tap_nbspace {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <TAPPING_TERM>;
+      quick-tap-ms = <QUICK_TAP>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&nbsp>;
     };
 
     OMIT_IF_NO_REF magic_backspace_emul: magic_backspace_emulation {
